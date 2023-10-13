@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/icons8-favicon-96.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>News Portsl</title>
+  </head>
+  <body>
+    <main>
+      <div class="outer-wrap">
+        <div class="inner-wrap">
+          <section class="heading">
+            <p class="title">News Portal - Mior</p>
+            <p class="subtitle">Custom News Portal</p>
+          </section>
+          <section class="news">
+            <div class="category">
+              <span
+                class="active"
+                data-id="/v2/top-headlines?country=us&language=en&from=2023-09-13&pageSize=20&sortBy=publishedAt"
+                >US (All)</span
+              ><span
+                data-id="/v2/top-headlines?country=us&category=business&language=en&from=2023-09-13&pageSize=20&sortBy=publishedAt"
+                >US (Business)</span
+              ><span
+                data-id="/v2/everything?q=cryptocurrency&language=en&from=2023-09-13&pageSize=20&sortBy=publishedAt"
+                >Cryptocurrency</span
+              ><span
+                data-id="/v2/top-headlines?sources=techcrunch&language=en&from=2023-09-13&pageSize=20&sortBy=publishedAt"
+                >Startups</span
+              >
+            </div>
+            <div class="cards"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
